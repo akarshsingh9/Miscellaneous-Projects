@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.quickdeal.quickdealdemo.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/iamrel"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_background"
+            android:id="@+id/qdbg2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:id="@+id/qdtext"
+            android:text="@string/qdtext"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@id/qdtext"
+    android:layout_marginTop="25dp"
+    android:gravity="center">
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_marginRight="6dp"
+            android:id="@+id/buyer"
+            android:src="@drawable/ic_buyer"
+            android:background="@null"
+            android:adjustViewBounds="true"
+            />
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_marginLeft="6dp"
+            android:id="@+id/seller"
+            android:src="@drawable/ic_seller"
+            android:background="@null"
+            android:adjustViewBounds="true"
+            />
+</LinearLayout>
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_above="@id/iamrel"
+        android:src="@drawable/background"
+        android:id="@+id/quickdealbg"/>
+</RelativeLayout>
