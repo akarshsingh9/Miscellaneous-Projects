@@ -1,8 +1,58 @@
 59f3471779b0400b8d99de8a298673e2
 
+categories : business entertainment general health science sports technology
+
 ae - UAE
 ar - Argentina
 au - Australia
 at - Austria
 be - belgium
 br - Brazil
+bg - bulgaria
+ca - canada
+ch - switzerland
+cn - china
+co - colombia
+cu- cuba
+cz - czech republic
+de - germany
+eg - egypt
+fr - france
+gb - uk
+gr - greece
+hk - hong kong
+hu - hungary
+id - indonesia
+ie - republic of ireland
+il - israel
+in -india
+it - italy
+jp - japan
+kr - south korea
+lt - lithuania
+lv - latvia
+ma - morocco
+mx - mexico
+my - malaysia
+ng - nigeria
+nl - netherlands
+no - norway
+nz - new zealand
+ph -philippines
+pl -poland
+pt -portugal
+ro - romania
+rs - serbia
+ru - russia
+sa - saudi arabia
+se - sweden
+sg - singapore
+si - slovenia
+sk -slovakia
+th - thailand
+tr - turkey
+tw - taiwan
+ua - ukraine
+us - usa
+ve - venezuela
+za - south africa
