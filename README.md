@@ -9,3 +9,4 @@
 4. speed test
 5. Youtube download
 6. weather
+7. twitter api
