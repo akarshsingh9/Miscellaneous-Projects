@@ -1,19 +1,9 @@
 ---
-title: All you need to know about Programming
-author: Akarsh Singh
-type: post
-date: 2017-05-17T18:51:12+00:00
-url: /programming-intro/
-featured_image: /wp-content/uploads/2017/05/intro.png
-categories:
-  - Uncategorized
-tags:
-  - beginner
-  - learn to code
-  - programming
-  - python
-
+title: "Intro"
+date: 2020-01-04T01:18:26+05:30
+draft: true
 ---
+
 ## What is programming?
 
 Programming in layman terms is a process of writing computer programs to make your work easy or to be more specific automated. You can complete your repetitive tasks by programming it beforehand by using a computer program. So what is a computer program? A computer program is nothing but a collection of computer codes saved in a file (also called modules or scripts) that will perform the task according to the logic coded in the computer program.
