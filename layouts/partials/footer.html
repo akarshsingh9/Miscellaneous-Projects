@@ -1,0 +1,10 @@
+<footer>
+    <div class="social-links">
+       
+      <h4 >Social Contacts</h4>        
+      {{ range .Site.Params.social }}
+        <a href="{{ .URL | safeURL }}">{{ .title }}</a>
+      {{ end }}
+        
+    </div>
+</footer>

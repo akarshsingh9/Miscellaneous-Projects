@@ -1,3 +1,47 @@
+# default configuration
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
+
+# menu
+[[menu.main]]
+URL = "about"
+name = "About"
+weight = 2
+
+[[menu.main]]
+URL = "articles"
+name = "Articles"
+weight = 3
+
+[[menu.main]]
+URL = "portfolio"
+name = "Portfolio"
+weight = 4
+
+
+# default parameters
+[params]
+author = "Johnathan Smith"
+description = "This is meta description"
+
+# social site
+[[params.social]]
+URL = "#"
+title = "Facebook"
+icon = "ti-facebook"
+
+[[params.social]]
+URL = "#"
+title = "Instagram"
+icon = "ti-instagram"
+
+[[params.social]]
+URL = "#"
+title = "Dribbble"
+icon = "ti-dribbble"
+
+[[params.social]]
+URL = "#"
+title = "Twitter"
+icon = "ti-twitter-alt"
