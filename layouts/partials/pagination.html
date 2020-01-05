@@ -1,0 +1,61 @@
+<!--
+    * this is a non - bootstrap version of pagination in hugo
+    * if you need boostrap version use {{ template "_internal/pagination.html" . }} in _default/list.html 
+    * github link to bootstrap version : https://github.com/gohugoio/hugo/blob/master/tpl/tplimpl/embedded/templates/pagination.html
+-->
+{{ $pag := $.Paginator }}
+{{ if gt $pag.TotalPages 1 }}
+<ul style = "list-style: none;">
+   
+    <!--First page "<<<<" -->
+    {{ with $pag.First }}
+    <li style="display: inline;">
+        <a href="{{ .URL }}">&laquo;&laquo;</a>
+    </li>
+    {{ end }}
+    
+     <!--Previous page "<<" -->
+    <li style = "display: inline;">
+    <a {{ if $pag.HasPrev }}href="{{ $pag.Prev.URL }}"{{ end }}>&laquo;</a>
+    </li>
+    
+    
+    {{ $ellipsed := false }}
+    {{ $shouldEllipse := false }}
+    {{ range $pag.Pagers }}
+    {{ $right := sub .TotalPages .PageNumber }}
+    {{ $showNumber := or (le .PageNumber 3) (eq $right 0) }}
+    {{ $showNumber := or $showNumber (and (gt .PageNumber (sub $pag.PageNumber 2)) (lt .PageNumber (add $pag.PageNumber 2)))  }}
+    {{ if $showNumber }}
+        {{ $ellipsed = false }}
+        {{ $shouldEllipse = false }}
+    {{ else }}
+        {{ $shouldEllipse = not $ellipsed }}
+        {{ $ellipsed = true }}
+    {{ end }}
+    
+    <!--Show Numbers -->
+    {{ if $showNumber }}
+        <li style="display: inline;">
+            <a style="color:darkorange;" {{ if eq . $pag }}href="{{ .URL }}"{{ end }}>{{ .PageNumber }}</a>
+        </li>
+    
+    {{ else if $shouldEllipse }}
+        <li>&nbsp;&hellip;&nbsp;</li>
+    {{ end }}
+    {{ end }}
+    
+    <!--Next page ">>" -->
+    <li style="display: inline;">
+        <a {{ if $pag.HasNext }}href="{{ $pag.Next.URL }}"{{ end }}>&raquo;</a>
+    </li>
+    
+    <!--Last page ">>>>" -->
+    {{ with $pag.Last }}
+    <li style="display: inline;">
+        <a href="{{ .URL }}">&raquo;&raquo;</a>
+    </li>
+    {{ end }}
+
+</ul>
+{{ end }}
