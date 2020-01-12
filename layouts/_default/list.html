@@ -3,7 +3,7 @@
     <ul>
         {{ range .Paginator.Pages }}
             <li>
-                {{ partial "list_post.html"}}
+                {{ .Render "list_post"}}
             </li>
         {{ end }}
     </ul>
