@@ -1,11 +1,9 @@
 {{ define "main" }}
 <div>   
     <ul>
-        {{ range .Paginator.Pages }}
-            <li>
-                <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                <div>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
-            </li>
+        {{ $paginator := .Paginate .Data.Pages }}
+        {{ range $paginator.Pages }}
+        {{ .Render "post" }}
         {{ end }}
     </ul>
 </div>

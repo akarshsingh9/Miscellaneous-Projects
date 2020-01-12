@@ -1,0 +1,17 @@
+<div>
+    <article>
+         {{ if .Params.Image }}
+        <img src="{{ .Params.Image | absURL }}" alt="{{ .Title | markdownify }}">
+        {{ end }}
+        <div>
+            {{ range .Params.Categories }}
+            <a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}">{{ . | title | humanize }}</a>
+            {{ end }}
+            <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+            <div>
+                <span>By {{ .Site.Params.Author }}</span>
+                <span>{{ .Date.Format "02 January 2006" }}</span>
+            </div>
+        </div>
+    </article>
+</div>
