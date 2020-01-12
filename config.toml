@@ -2,7 +2,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "My New Hugo Site"
-paginate = 4
+paginate = 2
 
 # menu
 [[menu.main]]
