@@ -1,4 +1,20 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+<article>
+  <div>
+    {{ range .Params.Categories }}
+      <a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}">{{ . | title | humanize }}</a>
+    {{ end }}
+    <h2>{{ .Title | markdownify }}</h2>
+    <div>
+      <span>By {{ .Site.Params.Author }}</span>
+      <span>{{ .Date.Format "02 January 2006" }}</span>
+    </div>
+    {{ if .Params.image }}
+      <img src="{{ .Params.Image | absURL }}" alt="{{ .Title | markdownify }}">
+    {{ end }}
+    <div>
+      {{ .Content }}
+    </div>
+  </div>
+</article>
 {{ end }}
