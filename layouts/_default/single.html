@@ -10,7 +10,7 @@
       <span>{{ .Date.Format "02 January 2006" }}</span>
     </div>
     {{ if .Params.image }}
-      <img src="{{ .Params.Image | absURL }}" alt="{{ .Title | markdownify }}">
+      <img src="{{ .Params.Image | absURL }}" alt="{{ .Title | markdownify }}" style="width: 100%;max-width: 700px;height: auto; border-radius: 5%;">
     {{ end }}
     <div>
       {{ .Content }}

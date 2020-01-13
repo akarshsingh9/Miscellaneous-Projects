@@ -1,7 +1,7 @@
 <div>
     <article>
          {{ if .Params.Image }}
-        <img src="{{ .Params.Image | absURL }}" alt="{{ .Title | markdownify }}">
+        <img src="{{ .Params.Image | absURL }}" alt="{{ .Title | markdownify }}" style="width: 200%;max-width: 100px;height: auto; border-radius: 10%;">
         {{ end }}
         <div>
             {{ range .Params.Categories }}
