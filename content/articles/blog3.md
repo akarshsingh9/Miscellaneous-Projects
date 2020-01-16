@@ -1,10 +1,10 @@
 ---
 title: "Blog3"
-date: 2020-01-12T21:32:16+05:30
+date: 2020-01-16T23:05:43+05:30
 draft: true
 
 # image
-image: "images/author.jpg"
+image: "../images/author.jpg"
 
 # meta description
 description: "this is meta description"
@@ -12,12 +12,6 @@ description: "this is meta description"
 # taxonomies
 categories: 
   - "Android"
-tags:
-  - "Photos"
-  - "Game"
-  - "React"
-  - "Python"
-  - "New"
 
 # type
 type : "about"

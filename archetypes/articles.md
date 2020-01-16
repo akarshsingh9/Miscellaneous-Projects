@@ -12,12 +12,6 @@ description: "this is meta description"
 # taxonomies
 categories: 
   - "Android"
-tags:
-  - "Photos"
-  - "Game"
-  - "React"
-  - "Python"
-  - "New"
 
 # type
 type : "about"
