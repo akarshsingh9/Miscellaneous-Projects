@@ -11,8 +11,8 @@ name = "About"
 weight = 2
 
 [[menu.main]]
-URL = "articles"
-name = "Articles"
+URL = "blogs"
+name = "Blogs"
 weight = 3
 
 [[menu.main]]
